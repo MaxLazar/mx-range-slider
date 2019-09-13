@@ -1,0 +1,23 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * MX Range Slider plugin for Craft CMS 3.x
+ *
+ * RangeSlider Field Input
+ *
+ * @author    Max Lazar
+ * @copyright Copyright (c) 2019 Max Lazar
+ * @link      https://www.wiseupstudio.com
+ * @package   MxRangeSlider
+ * @since     3.1.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+<input type="text" id="{{ id }}" class="text fullwidth" name="{{ name }}" value="{{ value }}" style="display: none;" />
+
+
+{#
+{% for key, value in field.options %} data-{{ key }}="{{ value }}"{% endfor %}
+#}

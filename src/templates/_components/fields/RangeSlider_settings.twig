@@ -1,0 +1,63 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * MX Range Slider plugin for Craft CMS
+ *
+ * RangeSlider Field Settings
+ *
+ * @author    Max Lazar
+ * @copyright Copyright (c) 2019 Max Lazar
+ * @link      https://www.wiseupstudio.com
+ * @package   MxRangeSlider
+ * @since     3.1.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("mx\\mxrangeslider\\assetbundles\\rangesliderfield\\RangeSliderFieldAsset") %}
+
+{% for fkey in FieldsConfig %}
+
+    {% if field.options[fkey.option] is defined %}{% set fvalue = field.options[fkey.option] %}{% else %}{% set fvalue = fkey.defaults %}{% endif %}
+
+    {% if fkey.type == "number" or fkey.type == "string"  %}
+        {{ forms.textField({
+            label: fkey.option|capitalize|t("mxrangeslider"),
+            instructions: fkey.description|t("mxrangeslider"),
+            id: fkey.option,
+            name:  'options[' ~ fkey.option ~ ']',
+            value: fvalue})
+        }}
+    {% endif %}
+    {% if fkey.type == "boolean" %}
+        {{ forms.lightswitchField({
+            label: fkey.option|capitalize|t("mxrangeslider"),
+            instructions: fkey.description|t("mxrangeslider"),
+            id: fkey.option,
+            name:  'options[' ~ fkey.option ~ ']',
+            on: fvalue})
+        }}
+    {% endif %}
+
+    {% if fkey.type == "function" %}
+        {{ forms.textareaField({
+            label: fkey.option|capitalize|t("mxrangeslider") ~ ' Event',
+            instructions: fkey.description|t("mxrangeslider"),
+            id: fkey.option,
+            name:  'options[' ~ fkey.option ~ ']',
+            value: fvalue})
+        }}
+    {% endif %}
+    {% if fkey.type == "select" %}
+        {{ forms.selectField({
+            label: fkey.option|capitalize|t("mxrangeslider"),
+            instructions: fkey.description|t("mxrangeslider"),
+            id: fkey.option,
+            name:  'options[' ~ fkey.option ~ ']',
+            toggle: true,
+            options: fkey.values,
+            value: fvalue})
+        }}
+    {% endif %}
+{% endfor %}

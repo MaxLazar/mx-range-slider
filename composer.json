@@ -1,0 +1,40 @@
+{
+    "name": "mx/mx-range-slider",
+    "description": "Is an easy, flexible and responsive range slider for Craft CMS with tons of options.",
+    "type": "craft-plugin",
+    "version": "3.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "mx range slider"
+    ],
+    "support": {
+        "docs": "https://github.com/maxlazar/mx-range-slider/blob/master/README.md",
+        "issues": "https://github.com/maxlazar/mx-range-slider/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Lazar",
+            "homepage": "https://www.wiseupstudio.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "mx\\mxrangeslider\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "MX Range Slider",
+        "handle": "mx-range-slider",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/maxlazar/mx-range-slider/master/CHANGELOG.md",
+        "class": "mx\\mxrangeslider\\MxRangeSlider"
+    }
+}
