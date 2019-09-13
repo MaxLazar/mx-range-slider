@@ -1,5 +1,5 @@
 {
-    "name": "mx/mx-range-slider",
+    "name": "maxlazar/mx-range-slider",
     "description": "Is an easy, flexible and responsive range slider for Craft CMS with tons of options.",
     "type": "craft-plugin",
     "version": "3.1.0",
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "mx\\mxrangeslider\\": "src/"
+          "maxlazar\\mxrangeslider\\": "src/"
         }
     },
     "extra": {
