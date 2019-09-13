@@ -60,7 +60,7 @@ class MxRangeSlider extends Plugin
      *
      * @var string
      */
-    public $schemaVersion = '3.1.1';
+    public $schemaVersion = '3.1.2';
 
     // Public Methods
     // =========================================================================
