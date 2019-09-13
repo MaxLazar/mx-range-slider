@@ -10,7 +10,7 @@ This plugin requires Craft CMS 3.0.0-beta.23 or later.
 
 ## Installation
 
-1. Install with Composer via `composer require maxlazar/mx-rangeslider-craftcms` from your project directory
+1. Install with Composer via `composer require maxlazar/mx-range-slider` from your project directory
 2. Install plugin in the Craft Control Panel under Settings > Plugins
 
 You can also install MX Range Slider via the **Plugin Store** in the Craft Control Panel.
