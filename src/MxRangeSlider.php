@@ -36,7 +36,7 @@ use yii\base\Event;
  *
  * @author    Max Lazar
  * @package   MxRangeSlider
- * @since     3.1.0
+ * @since     3.1.1
  *
  */
 class MxRangeSlider extends Plugin
@@ -60,7 +60,7 @@ class MxRangeSlider extends Plugin
      *
      * @var string
      */
-    public $schemaVersion = '3.1.0';
+    public $schemaVersion = '3.1.1';
 
     // Public Methods
     // =========================================================================
