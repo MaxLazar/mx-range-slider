@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Max Lazar
  */
 
-namespace mx\mxrangeslider\variables;
+namespace maxlazar\mxrangeslider\variables;
 
-use mx\mxrangeslider\MxRangeSlider;
+use maxlazar\mxrangeslider\MxRangeSlider;
 
 use Craft;
 

@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2019 Max Lazar
  */
 
-namespace mx\mxrangeslider\twigextensions;
+namespace maxlazar\mxrangeslider\twigextensions;
 
-use mx\mxrangeslider\MxRangeSlider;
+use maxlazar\mxrangeslider\MxRangeSlider;
 
 use Craft;
 

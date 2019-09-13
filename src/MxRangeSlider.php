@@ -8,11 +8,11 @@
  * @copyright Copyright (c) 2019 Max Lazar
  */
 
-namespace mx\mxrangeslider;
+namespace maxlazar\mxrangeslider;
 
-use mx\mxrangeslider\variables\MxRangeSliderVariable;
-use mx\mxrangeslider\twigextensions\MxRangeSliderTwigExtension;
-use mx\mxrangeslider\fields\RangeSlider as RangeSliderField;
+use maxlazar\mxrangeslider\variables\MxRangeSliderVariable;
+use maxlazar\mxrangeslider\twigextensions\MxRangeSliderTwigExtension;
+use maxlazar\mxrangeslider\fields\RangeSlider as RangeSliderField;
 
 use Craft;
 use craft\base\Plugin;
@@ -145,5 +145,4 @@ class MxRangeSlider extends Plugin
 
     // Protected Methods
     // =========================================================================
-
 }

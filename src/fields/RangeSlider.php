@@ -9,10 +9,10 @@
  * @copyright Copyright (c) 2019 Max Lazar
  */
 
-namespace mx\mxrangeslider\fields;
+namespace maxlazar\mxrangeslider\fields;
 
-use mx\mxrangeslider\assetbundles\rangesliderfield\RangeSliderFieldAsset;
-use mx\mxrangeslider\helpers\Config as ConfigLoader;
+use maxlazar\mxrangeslider\assetbundles\rangesliderfield\RangeSliderFieldAsset;
+use maxlazar\mxrangeslider\helpers\Config as ConfigLoader;
 use Craft;
 use craft\base\ElementInterface;
 use craft\base\Field;
@@ -194,7 +194,7 @@ class RangeSlider extends Field
     {
         $js = '';
 
-        foreach ($data  as $key => $value) {
+        foreach ($data as $key => $value) {
             if (!isset($this->options[$key]) || $value['defaults'] == $this->options[$key]) {
                 continue;
             }

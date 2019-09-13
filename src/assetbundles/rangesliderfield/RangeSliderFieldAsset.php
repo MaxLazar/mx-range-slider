@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2019 Max Lazar
  */
 
-namespace mx\mxrangeslider\assetbundles\rangesliderfield;
+namespace maxlazar\mxrangeslider\assetbundles\rangesliderfield;
 
 use Craft;
 use craft\web\AssetBundle;
