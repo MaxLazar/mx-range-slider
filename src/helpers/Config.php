@@ -7,7 +7,7 @@
  * @copyright Copyright (c) 2019 MaxLazar
  */
 
-namespace mx\mxrangeslider\helpers;
+namespace maxlazar\mxrangeslider\helpers;
 
 use Craft;
 use craft\helpers\StringHelper;
@@ -41,7 +41,7 @@ class Config
         $path = self::getConfigFilePath('@config', $filePath);
         if (!file_exists($path)) {
             // Now try our own internal config
-            $path = self::getConfigFilePath('@mx/mxrangeslider', $filePath);
+            $path = self::getConfigFilePath('@maxlazar/mxrangeslider', $filePath);
             if (!file_exists($path)) {
                 if (!$alias) {
                     return [];
